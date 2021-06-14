@@ -1,1 +1,3 @@
-#[cfg(feature = "x86_64")] pub mod vga_buffer;
+#[cfg(feature = "vga")] pub mod vga {
+    pub use vga::*;
+}
