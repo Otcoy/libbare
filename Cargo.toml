@@ -17,6 +17,8 @@ lazy_static = "1.4.0"
 spin = "0.9.0"
 x86_64 = { version = "0.14.3", optional = true }
 vga = { version = "0.2.7", optional = true }
+cstr_core = "0.2.3"
+libc = "0.2.97"
 
 [build-dependencies]
 cbindgen = "0.19.0"
