@@ -12,11 +12,12 @@ categories = [ "no-std" ]
 panic = "abort"
 
 [dependencies]
-no-std-compat = { version = "0.4.1", features = [ "alloc" ] }
+#no-std-compat = { version = "0.4.1", features = [ "alloc" ] }
+no-std-compat = { git = "https://gitlab.com/tsao-chi/no-std-compat", features = [ "alloc", "compat_hash", "compact_cstr", "compact_osraw" ] }
 lazy_static = "1.4.0"
 spin = "0.9.0"
-x86_64 = { version = "0.14.3", optional = true }
-vga = { version = "0.2.7", optional = true }
+x86_64 = { version = "0.14.3", optional = true } # amd64 only
+vga = { version = "0.2.7", optional = true } # amd64 only
 cstr_core = "0.2.3"
 libc = "0.2.97"
 
