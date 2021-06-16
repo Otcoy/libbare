@@ -1,0 +1,19 @@
+[package]
+name = "amd64_minimal"
+version = "0.1.0"
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+
+[dependencies.libbare]
+path = "../../"
+features = [ "arch_amd64", "unstable" ]
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
