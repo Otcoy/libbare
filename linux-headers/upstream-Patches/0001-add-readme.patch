@@ -1,0 +1,17 @@
+From b0b84d9d2616ce21031f04bfd691ced77f41a291 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?=E3=84=97=E3=84=A0=CB=8B=20=E3=84=91=E3=84=A7=CB=8A?=
+ <tsao-chi@the-lingo.org>
+Date: Wed, 16 Jun 2021 11:34:32 +0000
+Subject: [PATCH] add readme
+
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..1dcb7c1
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++Compatibility layer for existing linux kernel modules.
+-- 
+2.20.1
+
