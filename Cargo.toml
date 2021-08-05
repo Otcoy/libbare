@@ -6,22 +6,22 @@ authors = ["ㄗㄠˋ ㄑㄧˊ <tsao-chi@the-lingo.org>"]
 repository = "https://github.com/Otcoy/libbare"
 description = "libbare: statically linkable and dynamically loadable drivers"
 license = "MPL-2.0"
-categories = [ "no-std" ]
+categories = ["no-std"]
 
 [profile.dev]
 panic = "abort"
 
 [dependencies]
-compat-no-std = { version = "0.4.1-1", features = [ "compat_hash", "compact_cstr", "compact_osraw" ] }
+compat-no-std = { version = "0.4.1-patch1", features = [] }
 lazy_static = "1.4.0"
 spin = "0.9.0"
 x86_64 = { version = "0.14.3", optional = true } # amd64 only
 vga = { version = "0.2.7", optional = true } # amd64 only
 
 [features]
-alloc = ["compat-no-std/alloc"]
+alloc = ["compat-no-std/alloc", "compat-no-std/compat_hash", "compat-no-std/compat_cstr", "compat-no-std/compat_osraw"]
 default = ["arch_amd64", "alloc"]
 #default = [ "std" ] # Default to using the std
-std = [ "compat-no-std/std" ]
+std = ["compat-no-std/std"]
 arch_amd64 = ["x86_64", "vga"]
-unstable = [ "compat-no-std/unstable" ]
+unstable = ["compat-no-std/unstable"]

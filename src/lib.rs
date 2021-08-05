@@ -1,8 +1,8 @@
 #![no_std]
 #![feature(custom_test_frameworks)]
 #![feature(c_variadic)]
-extern crate no_std_compat as std;
-pub use no_std_compat::*;
+extern crate compat_no_std as std;
+pub use compat_no_std::*;
 
 pub mod driver;
 
