@@ -6,6 +6,10 @@ pub use compat_no_std::*;
 
 pub mod driver;
 
+pub mod service;
+
 mod common;
 
 pub mod linux;
+
+pub mod utils;
