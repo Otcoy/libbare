@@ -19,6 +19,7 @@ x86_64 = { version = "0.14.3", optional = true } # amd64 only
 vga = { version = "0.2.7", optional = true } # amd64 only
 thread_local = "1.1.3" # todo: no-std
 arc-swap = "1.3.0" # todo: no-std
+owning_ref = "0.4.1" # todo: no-std
 
 [features]
 default = ["arch_amd64"]
